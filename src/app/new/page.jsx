@@ -1,5 +1,8 @@
 "use client";
-import { TextArea, TextField } from "@radix-ui/themes";
+import {TextField } from "@radix-ui/themes";
+import React from "react";
+import SimpleMDE from "react-simplemde-editor";
+import "easymde/dist/easymde.min.css";
 
 export default function page() {
   return (
@@ -11,7 +14,7 @@ export default function page() {
     </TextField.Root>
     </div>
     <div>
-        <TextArea color="green" variant="soft" placeholder="Describe the issue..."/>
+        <SimpleMDE placeholder="Describe the issue..."/>
     </div>
     </>
   )

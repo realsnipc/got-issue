@@ -3,8 +3,6 @@ import { Theme } from '@radix-ui/themes'
 import './globals.css'
 import Navbar from './components/Navbar'
 import '@radix-ui/themes/styles.css';
-import Head from 'next/head';
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,11 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <body className={inter.className}>
-        <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&family=Work+Sans&display=swap" rel="stylesheet" />
-        </Head>
         <Theme>
           <Navbar></Navbar>
           <main className='p-6'>{children}</main>
