@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&family=Work+Sans&display=swap" rel="stylesheet" />
         <Theme>
           <Navbar></Navbar>
