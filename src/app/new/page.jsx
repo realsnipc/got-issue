@@ -1,13 +1,14 @@
 "use client";
 import {TextField } from "@radix-ui/themes";
 import {React,useCallback,useState} from "react";
-import "easymde/dist/easymde.min.css";
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 export default function page() {
 
   let [title,setTitle]= useState("");
   let [description,setDescription]= useState("")
-
+  console.log(description)
   return (
     <>
    <h1 className="text-3xl font-inter" >Sumbit a Issue</h1> 
@@ -17,7 +18,7 @@ export default function page() {
     </TextField.Root>
     </div>
     <div>
-      
+    <ReactQuill theme="snow" value={description} onChange={setDescription} />
     </div>
     </>
   )
